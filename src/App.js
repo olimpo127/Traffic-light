@@ -21,6 +21,7 @@ const TrafficLight = () => {
   return (
     <div>
       <div
+        onClick={() => setLight("red")}
         style={{
           height: "100px",
           width: "100px",
@@ -31,6 +32,7 @@ const TrafficLight = () => {
         }}
       />
       <div
+        onClick={() => setLight("yellow")}
         style={{
           height: "100px",
           width: "100px",
@@ -41,6 +43,7 @@ const TrafficLight = () => {
         }}
       />
       <div
+        onClick={() => setLight("green")}
         style={{
           height: "100px",
           width: "100px",
@@ -49,8 +52,6 @@ const TrafficLight = () => {
           display: "inline-block",
         }}
       />
-      <br />
-      <button onClick={changeLight}>Change Light</button>
     </div>
   );
 };
