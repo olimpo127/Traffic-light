@@ -4,22 +4,10 @@ import React, {useState} from "react";
 const TrafficLight = () => {
   const [light, setLight] = useState("red");
 
-  const changeLight = () => {
-    switch (light) {
-      case "red":
-        setLight("green");
-        break;
-      case "yellow":
-        setLight("red");
-        break;
-      case "green":
-        setLight("yellow");
-        break;
-    }
-  };
+  
 
   return (
-    <div>
+    <div className='bg-dark col-1 d-flex flex-column m-5'>
       <div
         onClick={() => setLight("red")}
         style={{
